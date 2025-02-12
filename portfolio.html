@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>Portfolio</title>
+  <style>
+    /* General Reset */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    
+    /* Header Styling */
+    header {
+      background-color: #e3f2f9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header nav a {
+      text-decoration: none;
+      color: #006d77;
+      font-weight: bold;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #023047;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #f0fafa;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #004643;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #606060;
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .hero .buttons {
+      margin-top: 20px;
+    }
+
+    .hero .buttons a {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #006d77;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero .buttons a:hover {
+      background-color: #004643;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      color: #004643;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      color: #606060;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #e3f2f9;
+      padding: 60px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .about img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    /* CV Section */
+    .cv-section {
+      background-color: #f0fafa;
+      padding: 60px 20px;
+    }
+
+    .cv-section .cv-download {
+      margin-top: 20px;
+    }
+
+    .cv-download a {
+      text-decoration: none;
+      background-color: #006d77;
+      color: #ffffff;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cv-download a:hover {
+      background-color: #004643;
+    }
+	 ul {
+      list-style-type: none;
+      padding: 0;
+     }
+
+    
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h2 style="color: #004643; margin: 0;">My Portfolio</h2>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Hello, I'm Vaibhav Dixit</h1>
+    <p>
+      I am a Full-Stack Web Developer. Passionate and detail-oriented Full-Stack Developer with a strong foundation in front-end
+	  and back-end technologies. Proficient in HTML, CSS, JavaScript,
+    </p>
+    <div class="buttons">
+      <a href="#about">Learn More</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <img src="image 2.jpg" alt="Steve Milner">
+    <div class="about-text">
+      <h3>About Me</h3>
+      <p>
+        I'm a passionate Full-Stack Web Developer  user-friendly, and engaging websites and applications. I specialize in both front-end and back-end technologies, including HTML, CSS, JavaScript, and modern frameworks like React and Node.js.
+      </p>
+      <p>
+        My goal is to deliver high-quality solutions that exceed client expectations and make a positive impact.
+      </p>
+    </div>
+  </section>
+
+  <section id="cv" class="cv-section">
+  <h2>Curriculum Vitae (CV)</h2>
+  <div class="cv-embed">
+  <button onclick="window.open('https://drive.google.com/file/d/12fPsZddT0gnQtDLBQMcALSoensQd7tUg/view?usp=drivesdk ', '_blank')">Download My CV</button>
+  </div>
+</section>
+
+
+ <!-- Projects Section -->
+<section id="projects">
+  <h2>My Projects</h2>
+  <p>
+    Here are some of my recent works, including web applications, mobile apps, and UI/UX design projects. Each project showcases my technical expertise and creativity.
+  </p>
+
+  <!-- Web Development Projects -->
+  <!-- Web Development Projects -->
+<div class="project-category">
+  <h3>Web Development</h3>
+  <p>
+    These projects highlight my skills in creating dynamic and responsive websites using technologies like HTML, CSS, JavaScript, and modern frameworks such as React and Node.js.
+  </p>
+  <ul>
+    <li><strong>E-Commerce Website:</strong> A fully functional online store with payment gateway integration.</li>
+    <li><strong>Portfolio Website:</strong> A personal portfolio to showcase my work and skills.</li>
+    <li><strong>Blog Platform:</strong> A content management system for bloggers.</li>
+  </ul>
+
+  <!-- Centered Web Development Image -->
+  <div class="project-image">
+    <img src="web.jpeg" alt="Web Development Project Preview">
+  </div>
+</div>
+
+
+  <!-- Mobile App Projects -->
+<div class="project-category">
+  <h3>Mobile Apps</h3>
+  <p>
+    My mobile app projects focus on creating engaging and user-friendly applications for Android and iOS platforms.
+  </p>
+  <ul>
+    <li><strong>Fitness Tracker:</strong> A health and fitness app with activity tracking and goal setting.</li>
+    <li><strong>Chat App:</strong> A real-time messaging application using Firebase and React Native.</li>
+    <li><strong>Recipe Finder:</strong> An app to search and save recipes based on ingredients.</li>
+  </ul>
+
+  <!-- Mobile Image -->
+  <div class="project-image">
+    <img src="phone.jpeg" alt="Mobile App Preview">
+  </div>
+</div>
+
+
+ <!-- Contact Section -->
+   <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out via GitHub or LinkedIn:</p>
+    <div class="icon-container">
+      <!-- LinkedIn Icon -->
+      <img width="64" height="64" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/> 
+	  
+           <!-- GitHub Icon -->
+      <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/>
+      </a>
+	  <!-- Phone -->
+	  <img width="51" height="52" src="https://img.icons8.com/ios-filled/50/phone.png" alt="phone"/>
+    </a>
+    </div>
+  </section>  
+
+  </div>
+</body>
+</html>
+
