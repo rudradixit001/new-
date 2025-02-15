@@ -150,6 +150,65 @@
       list-style-type: none;
       padding: 0;
      }
+	 
+	 
+	 #skills {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .skills-text {
+      max-width: 800px;
+      padding: 20px;
+	  color:#black;
+    }
+
+    .skills-text h3 {
+      text-align: center;
+      color: #168c6f;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .skills-text p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .skills-text ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .skills-text ul li {
+      background-color: #e0e0e0;
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 1.3em;
+	  
+	.icon-container {
+      display: flex;
+      justify-content: center; /* Center icons horizontally */
+      gap: 20px; /* Adjust space between icons as needed */
+      padding: 10px; /* Optional: Add padding for better spacing */
+   }
+
+    .icon-container a {
+     display: inline-block;
+     transition: transform 0.3s; /* Smooth hover effect */
+   }
+
+    .icon-container a:hover {
+     transform: scale(1.1); /* Slightly enlarge icon on hover */
+   }
+  
+
 
     
 
@@ -221,9 +280,9 @@
 
 <!-- Certification  Section -->
   <section id="certification" class="certification-section">
-  <h2>Curriculum Vitae (Certification)</h2>
+  <h2>Certification</h2>
   <div class="certification-embed">
-  <button onclick="window.open('https://drive.google.com/file/d/13BmhkrOjyUTY8GcSMqLwHrHlCVYFBNp/view?usp=drivesdk','_blank)">View My Certification</button>
+  <button onclick="window.open('https://drive.google.com/file/d/13LY-YAbIB_W5ORO9yYgCSjqfW-ufm96_/view?usp=drivesdk ', '_blank)">View My Certification</button>
   </div>
 </section>
 
@@ -272,24 +331,49 @@
     <img src="phone.jpeg" alt="Mobile App Preview">
   </div>
 </div>
-
-
- <!-- Contact Section -->
-   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out via GitHub or LinkedIn:</p>
-    <div class="icon-container">
-      <!-- LinkedIn Icon -->
-      <img width="64" height="64" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/> 
-	  
-           <!-- GitHub Icon -->
-      <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/github.png" alt="github"/>
-      </a>
-	  <!-- Phone -->
-	  <img width="51" height="52" src="https://img.icons8.com/ios-filled/50/phone.png" alt="phone"/>
-    </a>
+ 
+ <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="skills-text">
+      <h3>My Skills</h3>
+    
+      <ul>
+        <li>HTML</li>
+        <li>Python</li>
+        <li>Node.js </li>
+        <li>Database management </li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
     </div>
-  </section>  
+  </section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out via LinkedIn, GitHub, or Email, Phone Number:</p>
+  <div class="icon-container">
+    <!-- LinkedIn Icon -->
+    <a href="https://www.linkedin.com/in/vaibhav-dixit-990b6434a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank">
+      <img width="64" height="64" src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"/>
+    </a>
+    <!-- GitHub Icon -->
+    <a href="https://github.com/rudradixit001" target="_blank">
+      <img width="64" height="64" src="https://img.icons8.com/glyph-neue/64/github.png" alt="GitHub"/>
+    </a>
+    <!-- Gmail Icon -->
+    <a href="mailto:dixitrudra808@gmail.com">
+      <img width="64" height="64" src="https://img.icons8.com/color/48/gmail.png" alt="Gmail"/>
+    </a>
+	<!-- Phone Icon -->
+    <a href="tel:+918868017310">
+      <i class="fas fa-phone" style="font-size: 55px; color: #4CAF50;"></i>
+    </a>
+  </div>
+</section>
+
+
 
   </div>
 </body>
